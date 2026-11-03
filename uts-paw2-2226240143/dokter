@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'package:dokter/data/dokter.dart';
+import 'package:dokter/screens/detail_screen.dart';
+
+input ThemeData dokter application
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'dokter',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      // home: DetailScreen(dokter: dokter[0]),
+      home: DetailScreen(dokter: dokter[0]),
+    );
+  }
+}
